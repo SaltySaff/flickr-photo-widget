@@ -1,0 +1,7 @@
+<h1>Flickr Photo Fetcher</h1>
+<%= form_with url: "/photos/", method: :get do |form| %>
+  <%= form.label :id, "Enter User ID:" %>
+  <%= form.text_field :id %>
+  <%= form.submit "Submit" %>
+<% end %>
+

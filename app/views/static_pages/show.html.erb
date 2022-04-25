@@ -1,0 +1,6 @@
+<h1>Photo Feed</h1>
+<% @photofeed.map do |photo| %>
+  <h2><%= photo.title %></h2>
+  <img src= <%= "https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}_w.jpg" %>><br>
+  <%= photo.owner %>
+<% end %>
